@@ -1,0 +1,14 @@
+1. What are loaders and how do we implement loaders?
+Mechanism to load data asynchronously for an activity or fragment. Implemented with LoadManager
+
+2. What is an AsyncTaskLoader?
+Loads data asynchronously for an activity or fragment away from the main UI thread. Can handle configuration changes and behave within the activity lifecycle. 
+
+3. What is a Handler Thread for?
+A handler thread is used to communicate with the main thread from a worker thread.
+
+4. What are some common threading restrictions in android?
+Making network calls on the UI thread
+
+5. What are thread pools and thread pool executors?
+A FIFO task queue with a group of worker threads. When the UI thread sends tasks to the task queue and when a worker thread becomes available, it removes the task from the front of the queue and starts running it. 
